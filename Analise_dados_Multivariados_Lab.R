@@ -9,6 +9,8 @@ require(tidyr)
 
 # Leitura dos dados#
 
+library(RCurl)
+
 urlfile<-'https://raw.githubusercontent.com/pchiroque/Recifes-coralinos/master/GNov010319.csv'
 
 dado <- as.data.frame(read.csv(url(urlfile),header = TRUE,dec = ".",sep = ","))
